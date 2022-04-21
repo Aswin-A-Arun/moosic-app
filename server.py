@@ -59,7 +59,6 @@ def setup():
     acceptConnections()
 
 
-#------ Student Activity 1 Start---------------
 
 
 setup_thread = Thread(target=setup)           #receiving multiple messages
@@ -67,4 +66,4 @@ setup_thread.start()
 
 
 
-#------ Student Activity 1 End---------------
+
