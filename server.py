@@ -41,7 +41,7 @@ def acceptConnections():
 def setup():
     print("\n\t\t\t\t\t\tIP MESSENGER\n")
 
-    # Getting global values
+    
     global PORT
     global IP_ADDRESS
     global SERVER
@@ -50,7 +50,6 @@ def setup():
     SERVER  = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     SERVER.bind((IP_ADDRESS, PORT))
 
-    # Listening incomming connections
     SERVER.listen(100)
 
     print("\t\t\t\tSERVER IS WAITING FOR INCOMMING CONNECTIONS...")
@@ -61,9 +60,9 @@ def setup():
 
 
 
-setup_thread = Thread(target=setup)           #receiving multiple messages
-setup_thread.start()
 
+setup_thread = Thread(target=setup)           
+setup_thread.start()
 
 
 
